@@ -46,20 +46,20 @@
             white-space: nowrap;
             width: 100%;
             cursor: pointer;
-            scrollbar-width: thin; /* Make the scrollbar visible */
-            scrollbar-color: #00ff00 #1c2331; /* Green thumb and dark track */
+            scrollbar-width: thin;
+            scrollbar-color: #00ff00 #1c2331;
         }
         .favorites::-webkit-scrollbar {
-            width: 8px; /* Width of the scrollbar */
+            width: 8px;
         }
         .favorites::-webkit-scrollbar-track {
-            background: #1c2331; /* Dark background for the track */
-            border-radius: 10px; /* Rounded track */
+            background: #1c2331;
+            border-radius: 10px;
         }
         .favorites::-webkit-scrollbar-thumb {
-            background: #00ff00; /* Green thumb */
-            border-radius: 10px; /* Rounded thumb */
-            border: 2px solid #1c2331; /* Optional: add a border for a nicer look */
+            background: #00ff00;
+            border-radius: 10px;
+            border: 2px solid #1c2331;
         }
         .favorites img {
             width: 150px;
@@ -177,16 +177,16 @@
         function loadFavorites() {
             const carousel = document.getElementById('favoritesCarousel');
             const imageLinks = [
-                { src: 'favorite1.jpg', href: 'http://example.com/favorite1' },
-                { src: 'favorite2.jpg', href: 'http://example.com/favorite2' },
-                { src: 'favorite3.jpg', href: 'http://example.com/favorite3' },
-                { src: 'favorite4.jpg', href: 'http://example.com/favorite4' },
-                { src: 'favorite5.jpg', href: 'http://example.com/favorite5' },
-                { src: 'favorite6.jpg', href: 'http://example.com/favorite6' },
-                { src: 'favorite7.jpg', href: 'http://example.com/favorite7' },
-                { src: 'favorite8.jpg', href: 'http://example.com/favorite8' },
-                { src: 'favorite9.jpg', href: 'http://example.com/favorite9' },
-                { src: 'favorite10.jpg', href: 'http://example.com/favorite10' }
+                { src: 'favorite1.jpg', href: 'favorite1.html?id=favorite1' },
+                { src: 'favorite2.jpg', href: 'favorite2.html?id=favorite2' },
+                { src: 'favorite3.jpg', href: 'item.html?id=favorite3' },
+                { src: 'favorite4.jpg', href: 'item.html?id=favorite4' },
+                { src: 'favorite5.jpg', href: 'item.html?id=favorite5' },
+                { src: 'favorite6.jpg', href: 'item.html?id=favorite6' },
+                { src: 'favorite7.jpg', href: 'item.html?id=favorite7' },
+                { src: 'favorite8.jpg', href: 'item.html?id=favorite8' },
+                { src: 'favorite9.jpg', href: 'item.html?id=favorite9' },
+                { src: 'favorite10.jpg', href: 'item.html?id=favorite10' }
             ];
             imageLinks.forEach(link => {
                 const a = document.createElement('a');
